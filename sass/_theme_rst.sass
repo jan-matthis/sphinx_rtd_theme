@@ -61,7 +61,8 @@
     display: block
     overflow: auto
   pre.literal-block, div[class^='highlight']
-    border: 1px solid $table-border-color
+    //border: 1px solid $table-border-color
+    border-radius: 6px
     overflow-x: auto
     // 1px hack otherwise border won't show. lame
     margin: 1px 0 $base-line-height 0
@@ -288,6 +289,7 @@
   // These are the "literals" that get spit out when you mark stuff as ``code`` as your write.
   tt, code
     @extend code
+    border: none
     color: $black
     font-family: $code-font-family
     padding: 2px 5px
@@ -296,7 +298,10 @@
       line-height: normal
 
     &.literal
-      color: $text-code-color
+      padding: .25rem .5rem
+      background-color: #f8f8f8
+      border-radius: 3px
+      color: $text-color
     &.xref, a &
       font-weight: bold
       color: $text-codexref-color

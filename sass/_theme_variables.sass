@@ -2,18 +2,18 @@
 // that are set in wyrm_core/wy_variables.sass. You'll find wyrm in bower_components if you're looking
 // for a reference.
 
+// My overwrites
 $font-awesome-dir:                    "../fonts/"
 $static-img:                          "../img/"
-
-$nav-content-width:                   800px
+$nav-content-width:                   1000px
 $nav-media-query:                     (($nav-desktop-width) + ($nav-content-width))
-
+$text-color:                          #2c3e50
 $mathjax-color:                       $text-color
-
 $headerlink-color:                    $text-color
+$text-code-color:                     #476582
 
 // Code colors
-$text-viewcode-color:                 $green
+$text-viewcode-color:                 $text-code-color
 $text-codexref-color:                 $text-color
 
 // Definition list colors
@@ -30,38 +30,39 @@ $footer-color:                        $text-medium
 $menu-vertical-background-color:      $section-background-color
 
 // Menu text colors
-$menu-color:                          $gray
-$menu-dark:                           lighten($menu-color,10%) !default
-$menu-medium:                         lighten($menu-color,27.5%) !default
-$menu-light:                          lighten($menu-color,45%) !default
-$menu-lighter:                        lighten($menu-color,60%) !default
+$menu-color:                          $text-color
+$menu-dark:                           $text-color // lighten($menu-color,5%) !default
+$menu-medium:                         $text-color
+$menu-light:                          $text-color
+$menu-lighter:                        $text-color
 
 // Menu link colors
 $menu-link-color:                     $text-color
-$menu-link-dark:                      $text-dark
-$menu-link-medium:                    $text-medium
-$menu-link-light:                     $text-lighter
-$menu-link-active:                    $white
+$menu-link-dark:                      $text-color
+$menu-link-medium:                    $text-color
+$menu-link-light:                     $text-color
+$menu-link-active:                    $text-color
 
 // Navigation colors
 $nav-background-color:                $menu-background-color
-$nav-search-background-color:         $blue
-$nav-search-color:                    $section-background-color
-$nav-link-color:                      $blue
-$nav-link-color-visited:              $purple
-$nav-link-color-hover:                lighten($nav-link-color, 6%) !default
-$nav-link-color-alt:                  hsl(33, 100%, 51%)
-$nav-caption:                         lighten($blue, 15%)
+$nav-search-background-color:         none
+$nav-search-color:                    $text-color
+$nav-link-color:                      $text-color
+$nav-link-color-visited:              $text-color
+$nav-link-color-hover:                $text-color // lighten($nav-link-color, 6%) !default
+$nav-link-color-alt:                  $text-color // hsl(33, 100%, 51%)
+$nav-caption:                         $text-color // lighten($blue, 15%)
 
 // Sidebar colors
 $sidebar-background-color:            $table-stripe-color
-$sidebar-border-color:                $table-border-color
+$sidebar-border-color:                $black
 $sidebar-title-background-color:      $table-border-color
 
 // Sphinx highlight color
 $highlight-color:                     $yellow
 
-$base-font-family:                    "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif
-$custom-font-family:                  "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif
-$custom-font-family2:                 Georgia, serif
+// Fonts
+$base-font-family:                    BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+$custom-font-family:                  BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+$custom-font-family2:                 BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 $code-font-family:                    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace

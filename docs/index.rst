@@ -23,6 +23,6 @@
 .. toctree::
     :maxdepth: 3
     :numbered:
-    :caption: This is an incredibly long caption for a long menu
+    :caption: This was a long caption
 
     demo/long
