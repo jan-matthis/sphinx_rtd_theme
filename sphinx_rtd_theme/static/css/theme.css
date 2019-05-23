@@ -4750,6 +4750,10 @@ h2, .rst-content .toctree-wrapper p.caption, h3 {
   font-weight: 400;
 }
 
+.highlight {
+  background-color: #f8f8f8 !important;
+}
+
 .btn {
   border: none;
 }
