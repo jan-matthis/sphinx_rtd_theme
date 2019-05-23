@@ -4947,6 +4947,7 @@ h2, .rst-content .toctree-wrapper p.caption, h3 {
   display: block;
   color: #2c3e50;
   margin-bottom: 0.809em;
+  margin-top: 10px;
 }
 .wy-side-nav-search input[type=text] {
   width: 100%;
@@ -4954,6 +4955,7 @@ h2, .rst-content .toctree-wrapper p.caption, h3 {
   padding: 6px 12px;
   border: 1px solid #eaecef !important;
   box-shadow: none !important;
+  margin-top: 10px;
 }
 .wy-side-nav-search img {
   display: block;
